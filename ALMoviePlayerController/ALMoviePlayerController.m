@@ -60,8 +60,19 @@ static const NSTimeInterval fullscreenAnimationDuration = 0.3;
     return nil;
 }
 
-- (id)initWithFrame:(CGRect)frame {
-    if ( (self = [super init]) ) {
+- (id)initWithFrame:(CGRect)frame
+{
+    if ([[[UIDevice currentDevice] systemVersion] integerValue] >= 8)
+    {
+        self = [super initWithContentURL:nil];
+    } else
+    {
+        self = [super init];
+    }
+    
+    if ( self ) {
+        
+//    if ( (self = [super init]) ) {
         
         self.view.frame = frame;
         self.view.backgroundColor = [UIColor blackColor];
