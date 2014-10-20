@@ -51,13 +51,20 @@
     //[movieControls setFadeDelay:2.0];
     //[movieControls setBarHeight:100.f];
     //[movieControls setSeekRate:2.f];
+    movieControls.style = ALMoviePlayerControlsStyleNone;
     
     //assign controls
     [self.moviePlayer setControls:movieControls];
     [self.view addSubview:self.moviePlayer.view];
     
     //THEN set contentURL
-    [self.moviePlayer setContentURL:[NSURL URLWithString:@"http://archive.org/download/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto-HawaiianHoliday1937-Video.mp4"]];
+//    [self.moviePlayer setContentURL:[NSURL URLWithString:@"http://archive.org/download/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto/WaltDisneyCartoons-MickeyMouseMinnieMouseDonaldDuckGoofyAndPluto-HawaiianHoliday1937-Video.mp4"]];
+    
+    [self.moviePlayer stop];
+    [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"键盘背景动画" ofType:@"mp4"]]];
+
+    self.moviePlayer.fullscreen = YES;
+
     
     //delay initial load so statusBarOrientation returns correct value
     double delayInSeconds = 0.3;
@@ -98,7 +105,11 @@
 //these files are in the public domain and no longer have property rights
 - (void)localFile {
     [self.moviePlayer stop];
-    [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"popeye" ofType:@"mp4"]]];
+//    [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"popeye" ofType:@"mp4"]]];
+    
+    [self.moviePlayer setContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"键盘背景动画" ofType:@"mp4"]]];
+
+    
     [self.moviePlayer play];
 }
 

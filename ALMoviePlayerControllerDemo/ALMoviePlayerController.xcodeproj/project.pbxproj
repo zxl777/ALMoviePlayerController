@@ -15,6 +15,7 @@
 		20F694D11805176800DEDB45 /* movieBackwardSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F694CD1805176800DEDB45 /* movieBackwardSelected@2x.png */; };
 		20F694D21805176800DEDB45 /* movieForwardSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F694CE1805176800DEDB45 /* movieForwardSelected.png */; };
 		20F694D31805176800DEDB45 /* movieForwardSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F694CF1805176800DEDB45 /* movieForwardSelected@2x.png */; };
+		33A5D77C19F575C10002F7C0 /* 键盘背景动画.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 33A5D77B19F575C10002F7C0 /* 键盘背景动画.mp4 */; };
 		4F1FABCB18072DD800849D06 /* movieEndFullscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1FABC918072DD800849D06 /* movieEndFullscreen.png */; };
 		4F1FABCC18072DD800849D06 /* movieEndFullscreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F1FABCA18072DD800849D06 /* movieEndFullscreen@2x.png */; };
 		4FE7646618045F5A00D91AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE7646518045F5A00D91AF3 /* Foundation.framework */; };
@@ -64,6 +65,7 @@
 		20F694CD1805176800DEDB45 /* movieBackwardSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieBackwardSelected@2x.png"; sourceTree = "<group>"; };
 		20F694CE1805176800DEDB45 /* movieForwardSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieForwardSelected.png; sourceTree = "<group>"; };
 		20F694CF1805176800DEDB45 /* movieForwardSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieForwardSelected@2x.png"; sourceTree = "<group>"; };
+		33A5D77B19F575C10002F7C0 /* 键盘背景动画.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "键盘背景动画.mp4"; sourceTree = "<group>"; };
 		4F1FABC918072DD800849D06 /* movieEndFullscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movieEndFullscreen.png; sourceTree = "<group>"; };
 		4F1FABCA18072DD800849D06 /* movieEndFullscreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "movieEndFullscreen@2x.png"; sourceTree = "<group>"; };
 		4FE7646218045F5A00D91AF3 /* ALMoviePlayerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALMoviePlayerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +228,7 @@
 		4FE764AA180463B100D91AF3 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				33A5D77B19F575C10002F7C0 /* 键盘背景动画.mp4 */,
 				4FE764A8180463AE00D91AF3 /* popeye.mp4 */,
 			);
 			name = Video;
@@ -342,6 +345,7 @@
 				4FE764B418046B1800D91AF3 /* moviePause.png in Resources */,
 				20F694D21805176800DEDB45 /* movieForwardSelected.png in Resources */,
 				4FE7647818045F5A00D91AF3 /* Images.xcassets in Resources */,
+				33A5D77C19F575C10002F7C0 /* 键盘背景动画.mp4 in Resources */,
 				4FE764B618046B1800D91AF3 /* moviePlay.png in Resources */,
 				20F694D01805176800DEDB45 /* movieBackwardSelected.png in Resources */,
 				4FE764B718046B1800D91AF3 /* moviePlay@2x.png in Resources */,
